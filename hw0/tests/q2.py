@@ -6,7 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> assert num_rows, num_columns == sols["q2"]
+          >>> assert num_rows == sols["q2"][0]
+          >>> assert num_columns == sols["q2"][1]
           """,
           'hidden': False,
           'locked': False
