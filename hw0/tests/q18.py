@@ -7,7 +7,8 @@ test = {
         {
           'code': r"""
           >>> assert type(coeff) is not np.ndarray, "The coefficient on CURSMOKE should be a number not an array."
-          >>> assert intercept, coeff == sols["q18"]
+          >>> assert intercept == sols["q18"][0]
+          >>> assert coeff == sols["q18"][1]
           """,
           'hidden': False,
           'locked': False

@@ -6,7 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> assert ci_low, ci_high == sols["q12"]
+          >>> assert ci_low == sols["q12"][0]
+          >>> assert ci_high == sols["q12"][1]
           """,
           'hidden': False,
           'locked': False
