@@ -6,8 +6,8 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> assert ci_low == sols["q12"][0]
-          >>> assert ci_high == sols["q12"][1]
+          >>> assert np.isclose(ci_low, sols["q12"][0]) or np.isclose(ci_low, sols["q12"][1])
+          >>> assert np.isclose(ci_high, sols["q12"][2]) or np.isclose(ci_high, sols["q12"][3])
           """,
           'hidden': False,
           'locked': False
