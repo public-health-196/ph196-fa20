@@ -6,7 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> assert map_grouped_by_age.equals(sols["q15"])
+          >>> assert np.all(np.isclose(map_grouped_by_age["MAP"], sols["q15"]["MAP"]))
           """,
           'hidden': False,
           'locked': False
