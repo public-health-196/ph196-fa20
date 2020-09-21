@@ -1,0 +1,16 @@
+{
+  "endpoint": "cal/ph196/fa19/hw1",
+  "name": "Homework 1",
+  "protocols": [
+    "file_contents",
+    "grading",
+    "backup",
+    "scoring"
+  ],
+  "src": [
+    "hw1.ipynb"
+  ],
+  "tests": {
+    "tests/q*.py": "ok_test"
+  }
+}
